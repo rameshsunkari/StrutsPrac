@@ -15,7 +15,7 @@ public class TutorialAction {
 
 	public String execute(){
 		TutorialFinderService service = new TutorialFinderService();
-		message = service.getBestTutorialSite();
+		setMessage(service.getBestTutorialSite());
 		
 		return "success";
 	}
